@@ -1,0 +1,39 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class About extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        selectOptions: []
+      };
+    }
+    
+    handleChange = (e) => {
+      let target = e.target
+          let name = target.name
+      //here
+      let value = Array.from(target.selectedOptions, option => option.value);
+      this.setState({
+        [name]: value
+      });
+    }
+    
+    render(){
+      return (
+        <div>
+          <h1>About Page!</h1>
+          <select name="selectOptions" multiple={true} onChange={this.handleChange}  value={this.state.selectOptions} >
+            <option value="zen">Zen</option>
+            <option value="ana">Ana</option>
+            <option value="junk">Junk</option>
+          </select>
+          <div>
+            {this.state.selectOptions.join(', ')}
+          </div>
+        </div>
+      );
+    }
+  }
+  
+  export default About;

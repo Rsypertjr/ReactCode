@@ -1,0 +1,16 @@
+{
+    "comments": [
+        {
+            "id": 1,
+            "title": "Hello World",
+            "author": "Sharvin Shah",
+            "content": "Example of blog application"
+        },
+        {
+            "id": 2,
+            "title": "Hello Again",
+            "author": "John Doe",
+            "content": "Testing another component"
+        }
+    ]
+}

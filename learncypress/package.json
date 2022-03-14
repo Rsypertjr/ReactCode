@@ -1,0 +1,19 @@
+{
+  "name": "learncypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.3.1",
+    "xvfb": "^0.4.0"
+  },
+  "dependencies": {
+    "nan": "^2.15.0",
+    "sleep": "^6.1.0"
+  },
+  "description": ""
+}
